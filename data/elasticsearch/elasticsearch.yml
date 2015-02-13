@@ -1,3 +1,17 @@
 path:
-  logs: /vagrant/data/elasticsearch/log
-  data: /vagrant/data/elasticsearch/data
+  logs: /data/elasticsearch/logs
+  data: /data/elasticsearch/data
+cluster:
+  name: nfl
+node: 
+  name: node1
+bootstrap:
+  mlockall: true
+
+# Set the number of shards (splits) of an index (5 by default):
+#
+index.number_of_shards: 1
+
+# Set the number of replicas (additional copies) of an index (1 by default):
+#
+index.number_of_replicas: 1
