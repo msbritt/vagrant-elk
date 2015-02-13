@@ -1,0 +1,3 @@
+path:
+  logs: /vagrant/data/elasticsearch/log
+  data: /vagrant/data/elasticsearch/data
